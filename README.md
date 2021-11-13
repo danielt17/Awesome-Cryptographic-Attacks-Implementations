@@ -40,7 +40,12 @@ Where the matrix and the vector are defined in the following way:
 
 ![image](https://user-images.githubusercontent.com/60748408/141657915-6bc3018a-2de1-42f7-b2f6-9112218093ac.png)
 
-If we assume the degree of the polynomial describing the LFSR is `n`, one needes to see `2*n` bits in order to recover the polynomial coefficents.
+If we assume the degree of the polynomial describing the LFSR is `n`, one needes to see `2*n` bits in order to recover the polynomial coefficents. Using matrix inversion over `GF(2)` can recover the coefficent vector in the following way:
 
+![image](https://user-images.githubusercontent.com/60748408/141657993-c93ad4a2-a67e-4643-9b7e-8eae60bc082b.png)
+
+The reason this approach isnt wildely used is because matrix inversion over a finite field has a time complexity of `O(n^3)`, and in addition an inverted matrix doesn't always exist. 
 
 ### LFSR full recovery using Berlekamp Massey algorithm
+
+
