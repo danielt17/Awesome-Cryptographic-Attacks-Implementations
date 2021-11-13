@@ -29,9 +29,8 @@ A gif describing the evolution of states in a LFSR of size 16 can be seen above,
 ### LFSR polynomial coefficent recovery using matrix inversion
 
 We can describe the LFSR recuresion formula in the following way:
+![image](https://user-images.githubusercontent.com/60748408/141657818-b3b6c39f-d211-4d69-a0ab-b68acf312f53.png)
+one can describe the LFSR system as a matrix multiplication formula over `GF(2)`.
 
-```math
-SE = \frac{\sigma}{\sqrt{n}}
-```
 
 ### LFSR full recovery using Berlekamp Massey algorithm
