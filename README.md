@@ -32,7 +32,15 @@ We can describe the LFSR recuresion formula in the following way:
 
 ![image](https://user-images.githubusercontent.com/60748408/141657818-b3b6c39f-d211-4d69-a0ab-b68acf312f53.png)
 
-one can describe the LFSR system as a matrix multiplication formula over `GF(2)`.
+One can describe the LFSR system as a matrix multiplication formula over `GF(2)`, where the equation is:
+
+![image](https://user-images.githubusercontent.com/60748408/141657879-6842e7c0-86bf-4084-b694-3769ddba6ac2.png)
+
+Where the matrix and the vector are defined in the following way:
+
+![image](https://user-images.githubusercontent.com/60748408/141657915-6bc3018a-2de1-42f7-b2f6-9112218093ac.png)
+
+If we assume the degree of the polynomial describing the LFSR is `n`, one needes to see `2*n` bits in order to recover the polynomial coefficents.
 
 
 ### LFSR full recovery using Berlekamp Massey algorithm
