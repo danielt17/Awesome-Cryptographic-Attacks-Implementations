@@ -48,6 +48,10 @@ The reason this approach isnt wildely used is because matrix inversion over a fi
 
 ### LFSR full recovery using Berlekamp Massey algorithm
 
-Finally, we are going to use the Berlekamp Massey algorithm to recover a LFSR inner state and seed with a time complexity of `O(n^2)`. The Berlekamp Massey algorithm is an algorithm that findss the hortest linear feedback shift register for a given binary sequence. the algorithm also find the minimal polynomiaal of linearly recurrent sequence in an arbitrary field.
+Finally, we are going to use the Berlekamp Massey algorithm to recover a LFSR inner state and seed with a time complexity of `O(n^2)`. The Berlekamp Massey algorithm is an algorithm that findss the hortest linear feedback shift register for a given binary sequence. the algorithm also find the minimal polynomiaal of linearly recurrent sequence in an arbitrary field. 
+
+The algorthim works in the following way:
+
+
 
 
