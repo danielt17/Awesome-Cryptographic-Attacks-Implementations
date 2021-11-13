@@ -17,4 +17,7 @@ In this subsection we are going to go over a state recovery attack against a LFS
 
 Linear-feedback shift register AKA LFSR is a shift register whose input bit is a linear function of its previous state. There are many uses for LFSRs which include but are not limited to: pseudo random number generators, pseudo-noise sequences, whitening sequences and more. LFSRs are a very attractive choice for implementations of RNG as they are very easy implement in hardware requiring only xor and shift operations.
 
-![Alt Text](https://upload.wikimedia.org/wikipedia/commons/9/99/Lfsr.gif)
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Lfsr.gif" />
+</p>
+
