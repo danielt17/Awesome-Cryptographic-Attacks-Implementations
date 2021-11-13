@@ -26,3 +26,6 @@ The LFSR works in the following way, one defines a list of taps which are bits w
 
 A gif describing the evolution of states in a LFSR of size 16 can be seen above, all standard LFSR work in the same, where the change is the amount of taps and there location.
 
+### LFSR polynomial coefficent recovery using matrix inversion
+
+
