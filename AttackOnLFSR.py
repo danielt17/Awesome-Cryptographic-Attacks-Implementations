@@ -49,7 +49,7 @@ class LFSR:
 # https://en.wikipedia.org/wiki/Berlekamp%E2%80%93Massey_algorithm
 
 class Berlekamp_Massey_algorithm:
-    """ Berlekamp - Massey algo: PYTHON IMPLEMENTATION
+    """ Berlekamp - Massey algorithm
     i/p:    S:  `list` of 0s and 1s, Sn, Sn-1, Sn-2, ... S1, S0.
     o/p:   min degree of C, Feedback Polynomial, anything else that we want 
     """
