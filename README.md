@@ -52,6 +52,7 @@ Finally, we are going to use the Berlekamp Massey algorithm to recover a LFSR in
 
 The algorithm works in the following way:
 
+![image](https://user-images.githubusercontent.com/60748408/141658295-8b37a448-5451-4d1d-ac08-85a67d27e0ff.png)
 
 
 
