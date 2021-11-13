@@ -18,9 +18,10 @@ In this subsection we are going to go over a state recovery attack against a LFS
 Linear-feedback shift register AKA LFSR is a shift register whose input bit is a linear function of its previous state. There are many uses for LFSRs which include but are not limited to: pseudo random number generators, pseudo-noise sequences, whitening sequences and more. LFSRs are a very attractive choice for implementations of RNG as they are very easy implement in hardware requiring only xor and shift operations.
 The LFSR works in the following way, one defines a list of taps which are bits which are feedback into the LFSR this bits will define the next state of the LFSR. After defining the taps one can define a coresponding polynomial over `GF(2)` which describes the LFSR. Finally, when one wants to run the LFSR he inputs a seed and asks the LFSR to do a given amount of step, which will correspond to a list of binary outputs.
 
-
+<figure>
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Lfsr.gif" />
-  <em>A gif describing the evolution of states in a LFSR of size 16</em>
+  <figcaption align = "center"><b>A gif describing the evolution of states in a LFSR of size 16</b></figcaption>
 </p>
+</figure>
 
