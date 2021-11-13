@@ -21,7 +21,7 @@ The LFSR works in the following way, one defines a list of taps which are bits w
 <figure>
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Lfsr.gif" />
-  <figcaption align = "center"><b>A gif describing the evolution of states in a LFSR of size 16</b></figcaption>
+  <figcaption><b>A gif describing the evolution of states in a LFSR of size 16</b></figcaption>
 </p>
 </figure>
 
