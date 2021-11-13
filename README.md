@@ -48,4 +48,6 @@ The reason this approach isnt wildely used is because matrix inversion over a fi
 
 ### LFSR full recovery using Berlekamp Massey algorithm
 
+Finally, we are going to use the Berlekamp Massey algorithm to recover a LFSR inner state and seed with a time complexity of `O(n^2)`.
+
 
