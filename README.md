@@ -54,5 +54,34 @@ The algorithm works in the following way:
 
 ![image](https://user-images.githubusercontent.com/60748408/141658295-8b37a448-5451-4d1d-ac08-85a67d27e0ff.png)
 
+An intuitive explanation of the algorithm can be given in the following way:
+
+1. Lets assume we want to estimate the paramters of the following recursion sequence, where the next bit of the LFSR output is decribed also by it. Where the coefficents lie in any finite field or infinte field (such as the real number field).
+
+![image](https://user-images.githubusercontent.com/60748408/141685829-f3dc77d8-36a9-4a9b-bab4-6e05b6b9ef29.png)
+
+2. One can prove that inorder to estimate the LFSR exactly we need to see `2*L` bits of output (ofcourse in `GF(2)`), and there exist a unique minimal polynomial such that it reconstruct the output sequence prefectly under those conditions which can be synthesised by the algorithm.
+
+3. After looking at the recurnce relation one can define the following polynomial with respect to the recurrnce relation, if we estimate the derived polynomial coefficents we recovered the LFSR coefficents.
+
+![image](https://user-images.githubusercontent.com/60748408/141685976-150228f7-4ce4-4cac-8dc4-ecc02a77ef06.png)
+
+4. The algorithm starts iteratevly computing the correct polynomial using the following method: we start with an estimated polynomial of degree 0, therefore the estimted polynomial is `C(D)=1`. After intializing the polynomial we solve the equation recusresively each time looking at the polynomial error with respect to the current sequence length, which is called the discrepancy, if we have an error we need to find a coefficent of the this exact degree to add inorder to zero out the discrepancy. The equation describing this recursive process can be seen below.
+
+![image](https://user-images.githubusercontent.com/60748408/141686103-5b9be420-118b-4b14-8b9c-11d24c3e2f90.png)
+
+5. After estimating the discrepancy we do the following update step to get the connection polynomial, which describes the output sequence more accurately:
+
+![image](https://user-images.githubusercontent.com/60748408/141686144-6a5bf13f-7400-473d-8303-690d5b0b24fa.png)
+
+Unlike the algorithm we described earlier the original Berlekamp Massey algorithm, can be written in the following way (which is a little bit more complicated to understand but gives more intution for preforming the algorithm on any finite field):
+
+![image](https://user-images.githubusercontent.com/60748408/141686210-2e90ad0f-2ac3-4263-83b8-e1b3e86cb64d.png)
+
+
+
+
+
+
 
 
