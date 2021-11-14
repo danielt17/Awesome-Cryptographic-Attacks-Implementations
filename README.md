@@ -78,6 +78,13 @@ Unlike the algorithm we described earlier the original Berlekamp Massey algorith
 
 ![image](https://user-images.githubusercontent.com/60748408/141686210-2e90ad0f-2ac3-4263-83b8-e1b3e86cb64d.png)
 
+### Algorithm result
+
+Below you can see an image describing an attack on an LFSR of degree 256, where the Berlekamp Massey algorithm is used and estimated correctly the seed and the polynomial in `0.016 [secs]`.
+
+![image](https://user-images.githubusercontent.com/60748408/141686258-bb617027-7090-4dc9-8db6-523a4967997e.png)
+
+
 
 
 
