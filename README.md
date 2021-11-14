@@ -48,7 +48,7 @@ The reason this approach isnt wildely used is because matrix inversion over a fi
 
 ### LFSR full recovery using Berlekamp Massey algorithm
 
-Finally, we are going to use the Berlekamp Massey algorithm to recover a LFSR inner state and seed with a time complexity of `O(n^2)`. The Berlekamp Massey algorithm is an algorithm that findss the hortest linear feedback shift register for a given binary sequence. the algorithm also find the minimal polynomiaal of linearly recurrent sequence in an arbitrary field. The algorithm was first described by James L. Massey in the paper "Shift-Register Synthesis and BCH Decoding" and than described in a simpler way in "The Berlekamp-Massey Algorithm revisited" by Nadia. B. Atti and Gema M. Díaz-Toca.
+Finally, we are going to use the Berlekamp Massey algorithm to recover a LFSR inner state and seed with a time complexity of `O(n^2)`. The Berlekamp Massey algorithm is an algorithm that findss the hortest linear feedback shift register for a given binary sequence. the algorithm also find the minimal polynomiaal of linearly recurrent sequence in an arbitrary field. The algorithm was first described by James L. Massey in the paper <a href="https://crypto.stanford.edu/~mironov/cs359/massey.pdf">"Shift-Register Synthesis and BCH Decoding" </a> and than described in a simpler way in <a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.96.2743&rep=rep1&type=pdf">"The Berlekamp-Massey Algorithm revisited" </a> by Nadia. B. Atti and Gema M. Díaz-Toca.
 
 The algorithm works in the following way:
 
@@ -83,7 +83,6 @@ Unlike the algorithm we described earlier the original Berlekamp Massey algorith
 Below you can see an image describing an attack on an LFSR of degree 256, where the Berlekamp Massey algorithm is used and estimated correctly the seed and the polynomial in `0.016 [secs]`.
 
 ![image](https://user-images.githubusercontent.com/60748408/141686258-bb617027-7090-4dc9-8db6-523a4967997e.png)
-
 
 
 
